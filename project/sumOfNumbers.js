@@ -1,0 +1,1 @@
+let curr = 0;const max = 15;let sum = 0;while (curr <= max) {	sum += curr;	console.log(`current number: ${curr}, sum (so far): ${sum}`);	curr++;}console.log('------------');console.log(`Final sum from numbers between 0 and ${max} (inclusive): ${sum}`);

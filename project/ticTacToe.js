@@ -2,9 +2,9 @@ class TicTacToe {
 
     constructor() {
         this.board = [
-            [' ', ' ', ' ',],
-            [' ', ' ', ' ',],
-            [' ', ' ', ' ',],
+            [' ', ' ', 'X',],
+            [' ', 'O', ' ',],
+            ['X', ' ', ' ',],
             
 
         ];
@@ -13,15 +13,15 @@ class TicTacToe {
         // getter for empty spaces on board
 
     get emptySpaces() {
-            let board = this.board;
+           // let board = this.board;
             let spaces = 0;
             // iterate over each row
-            for (let i = 0; i < board.length; i++) {
-                const row = board.length;
+            for (let i = 0; i < this.board.length; i++) {
+                const row = this.board[i];
 
 
                 // iterate over each column in the row
-                for (let j = 0; j < row.length; i++) {
+                for (let j = 0; j < row.length; j++) {
                     const columnVal = row[j];
 
 
@@ -31,7 +31,8 @@ class TicTacToe {
                 }
 
             }
-            return spaces;
+
+        return spaces;
         }
 
 

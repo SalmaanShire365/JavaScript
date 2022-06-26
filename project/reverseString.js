@@ -1,8 +1,13 @@
-// write a function that, when given a string, will return a copy of that string 
-// reversed
+const reverseStringByChopping = string => {
+    // get last character in string
 
-function reverseString(string) {
-	return string.split('').reverse().join('');
+    const lastChar = string[string.length - 1];
+
+    // no need to continue recursion if no more characters to collect
+    if (string.lengh === 1) {
+        return lastChar;
+    }
+
+    return lastChar + reverseStringByChopping(string.slice(0, -1));
 }
-
-console.log(reverseString("This is a string that is reversed"));
+console.log(reverseStringByChopping('dog'));

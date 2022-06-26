@@ -63,4 +63,4 @@ class TinyTortoise extends Animal {
 const babyGiantRabbit = new GiantRabbit('fluffy');
 console.log(babyGiantRabbit);
 const daddyTinyTortoise = new TinyTortoise('scruffy');
-console.log(daddyTinyTortoise)
+console.log(daddyTinyTortoise);
